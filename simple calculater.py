@@ -1,11 +1,13 @@
 import emoji
 
 def show_menu() :
-    print("*** Simple Calculater ***")
-    print(emoji.emojize("1. String of (+ , - , * , /)"))
+    print()
+    print()
+    print(emoji.emojize("*** Simple Calculater :abacus: ***"))
+    print(emoji.emojize("1. String of :heavy_plus_sign: :heavy_minus_sign: :heavy_multiplication_x:  :heavy_division_sign:" , language="alias"))
     print(emoji.emojize("2. Power :zap:" , language="alias"))
     print(emoji.emojize("3. Root :seedling:"))
-    print(emoji.emojize("4. Percentage :percent:" , language="alias"))
+    print(emoji.emojize("4. Percentage :1234:", language="alias")) 
     print(emoji.emojize("5. Factorial :bangbang:" , language="alias"))
     print(emoji.emojize("6. Abs :straight_ruler:"))
     print(emoji.emojize("7. exit :door:"))
@@ -14,29 +16,36 @@ def show_menu() :
     return b 
 
 def power() :
-
+    print()
     a = int(input("enter the first number : "))
     b = int(input("enter the second number : "))
+    print()
     return a**b
 
 
 def root() :
+    print()
     a = int(input("enter the base number : "))
     b = int(input("enter the root degree : "))
-    if (b==0) :
+    print()
+    if (b==0) :        
         return "Wrong Input!!!"
     else :
         return (a**(1/b))
 
 def percentage() :
+    print()
     a = int(input("enter the base number : "))
     b = int(input("enter the percentage you want to calculate : "))
+    print()
     unit = a/100
     result = unit * b
     return result
 
 def factorial() :
+    print()
     b = int(input("enter a number to calculate its factorial : "))
+    print()
     result = 1
     while(b>0) :
         result *= b
@@ -44,7 +53,9 @@ def factorial() :
     return result
 
 def abs() :
+    print()
     a = int(input("Enter a number to calculate its absolute value : "))
+    print()
     if(a>=0) :
         return a
     else :
@@ -58,16 +69,22 @@ while(runnig) :
     a = show_menu()
     if a==1 :
         pass
-    if a==2 :
+    elif a==2 :
         print(power())
-    if a==3 :
+    elif a==3 :
         print(root())
-    if a==4 :
+    elif a==4 :
         print(percentage())
-    if a==5 :
+    elif a==5 :
         print(factorial())
-    if a==6 :
+    elif a==6 :
         print(abs())
-    if a==7 :
+    elif a==7 :
+        print()
         print(emoji.emojize("thank you for using our app :red_heart:"))
         runnig = False
+    else :
+        print()
+        print("wrong input!!!")
+        print()
+       
