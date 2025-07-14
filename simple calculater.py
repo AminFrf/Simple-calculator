@@ -4,16 +4,45 @@ def show_menu() :
     print()
     print()
     print(emoji.emojize("*** Simple Calculater :abacus: ***"))
-    print(emoji.emojize("1. String of :heavy_plus_sign: :heavy_minus_sign: :heavy_multiplication_x:  :heavy_division_sign:" , language="alias"))
-    print(emoji.emojize("2. Power :zap:" , language="alias"))
-    print(emoji.emojize("3. Root :seedling:"))
-    print(emoji.emojize("4. Percentage :1234:", language="alias")) 
-    print(emoji.emojize("5. Factorial :bangbang:" , language="alias"))
-    print(emoji.emojize("6. Abs :straight_ruler:"))
-    print(emoji.emojize("7. exit :door:"))
+    print(emoji.emojize("1. Addition or Subtraction ( :heavy_plus_sign: ,:heavy_minus_sign: )" , language="alias"))
+    print(emoji.emojize("2. Multiplication or Division ( :heavy_multiplication_x:  ,:heavy_division_sign: )" , language="alias"))
+    print(emoji.emojize("3. Power :zap:" , language="alias"))
+    print(emoji.emojize("4. Root :seedling:"))
+    print(emoji.emojize("5. Percentage :1234:", language="alias")) 
+    print(emoji.emojize("6. Factorial :bangbang:" , language="alias"))
+    print(emoji.emojize("7. Abs :straight_ruler:"))
+    print(emoji.emojize("8. exit :door:"))
     print("Enter your choice :")
     b = int(input())
     return b 
+
+def Addition_Subtraction() :
+    print()
+    s = input("Enter your operation (+,-) : ")
+    if s=='+' :
+        first_num = int(input("enter first number : "))
+        second_num = int(input("enter second number : "))
+        return first_num + second_num
+    elif s=='-' :
+        first_num = int(input("enter first number : "))
+        second_num = int(input("enter second number : "))
+        return first_num - second_num
+    else :
+        return "wrong input !!!"
+    
+def Multiplication_Division() :
+    print()
+    s = input("Enter your operation (*,/) : ")
+    if s=='*' :
+        first_num = int(input("enter first number : "))
+        second_num = int(input("enter second number : "))
+        return first_num * second_num
+    elif s=='/' :
+        first_num = int(input("enter first number : "))
+        second_num = int(input("enter second number : "))
+        return first_num / second_num
+    else :
+        return "wrong input !!!"
 
 def power() :
     print()
@@ -68,18 +97,20 @@ runnig = True
 while(runnig) :
     a = show_menu()
     if a==1 :
-        pass
+        print(Addition_Subtraction())
     elif a==2 :
-        print(power())
+        print(Multiplication_Division())
     elif a==3 :
-        print(root())
+        print(power())
     elif a==4 :
-        print(percentage())
+        print(root())
     elif a==5 :
-        print(factorial())
+        print(percentage())
     elif a==6 :
-        print(abs())
+        print(factorial())
     elif a==7 :
+        print(abs())
+    elif a==8 :
         print()
         print(emoji.emojize("thank you for using our app :red_heart:"))
         runnig = False
