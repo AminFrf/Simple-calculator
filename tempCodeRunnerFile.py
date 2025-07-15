@@ -1,0 +1,1 @@
+(emoji.emojize("Wrong input :cross_mark:" , language ="alias"))

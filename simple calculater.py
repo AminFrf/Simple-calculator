@@ -20,52 +20,54 @@ def Addition_Subtraction() :
     print()
     s = input("Enter your operation (+,-) : ")
     if s=='+' :
-        first_num = int(input("enter first number : "))
-        second_num = int(input("enter second number : "))
+        first_num = int(input("Enter first number : "))
+        second_num = int(input("Enter second number : "))
         return first_num + second_num
     elif s=='-' :
-        first_num = int(input("enter first number : "))
-        second_num = int(input("enter second number : "))
+        first_num = int(input("Enter first number : "))
+        second_num = int(input("Enter second number : "))
         return first_num - second_num
     else :
-        return "wrong input !!!"
-    
+        a = (emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
+        return a    
 def Multiplication_Division() :
     print()
     s = input("Enter your operation (*,/) : ")
     if s=='*' :
-        first_num = int(input("enter first number : "))
-        second_num = int(input("enter second number : "))
+        first_num = int(input("Enter first number : "))
+        second_num = int(input("Enter second number : "))
         return first_num * second_num
     elif s=='/' :
-        first_num = int(input("enter first number : "))
-        second_num = int(input("enter second number : "))
+        first_num = int(input("Enter first number : "))
+        second_num = int(input("Enter second number : "))
         return first_num / second_num
     else :
-        return "wrong input !!!"
+        a = (emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
+        return a
 
 def power() :
     print()
-    a = int(input("enter the first number : "))
-    b = int(input("enter the second number : "))
+    a = int(input("Enter the first number : "))
+    b = int(input("Enter the second number : "))
     print()
     return a**b
 
 
 def root() :
     print()
-    a = int(input("enter the base number : "))
-    b = int(input("enter the root degree : "))
+    a = int(input("Enter the base number : "))
+    b = int(input("Enter the root degree : "))
     print()
     if (b==0) :        
-        return "Wrong Input!!!"
+        a = (emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
+        return a
     else :
         return (a**(1/b))
 
 def percentage() :
     print()
-    a = int(input("enter the base number : "))
-    b = int(input("enter the percentage you want to calculate : "))
+    a = int(input("Enter the base number : "))
+    b = int(input("Enter the percentage you want to calculate : "))
     print()
     unit = a/100
     result = unit * b
@@ -73,7 +75,7 @@ def percentage() :
 
 def factorial() :
     print()
-    b = int(input("enter a number to calculate its factorial : "))
+    b = int(input("Enter a number to calculate its factorial : "))
     print()
     result = 1
     while(b>0) :
@@ -112,10 +114,10 @@ while(runnig) :
         print(abs())
     elif a==8 :
         print()
-        print(emoji.emojize("thank you for using our app :red_heart:"))
+        print(emoji.emojize("Thank you for using our app :red_heart:"))
         runnig = False
     else :
         print()
-        print("wrong input!!!")
+        print(emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
         print()
        
