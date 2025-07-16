@@ -20,12 +20,12 @@ def Addition_Subtraction() :
     print()
     s = input("Enter your operation (+,-) : ")
     if s=='+' :
-        first_num = int(input("Enter first number : "))
-        second_num = int(input("Enter second number : "))
+        first_num = float(input("Enter first number : "))
+        second_num = float(input("Enter second number : "))
         return first_num + second_num
     elif s=='-' :
-        first_num = int(input("Enter first number : "))
-        second_num = int(input("Enter second number : "))
+        first_num = float(input("Enter first number : "))
+        second_num = float(input("Enter second number : "))
         return first_num - second_num
     else :
         a = (emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
@@ -34,12 +34,12 @@ def Multiplication_Division() :
     print()
     s = input("Enter your operation (*,/) : ")
     if s=='*' :
-        first_num = int(input("Enter first number : "))
-        second_num = int(input("Enter second number : "))
+        first_num = float(input("Enter first number : "))
+        second_num = float(input("Enter second number : "))
         return first_num * second_num
     elif s=='/' :
-        first_num = int(input("Enter first number : "))
-        second_num = int(input("Enter second number : "))
+        first_num = float(input("Enter first number : "))
+        second_num = float(input("Enter second number : "))
         return first_num / second_num
     else :
         a = (emoji.emojize("Wrong input :cross_mark:" , language ="alias"))
@@ -47,7 +47,7 @@ def Multiplication_Division() :
 
 def power() :
     print()
-    a = int(input("Enter the first number : "))
+    a = float(input("Enter the first number : "))
     b = int(input("Enter the second number : "))
     print()
     return a**b
@@ -55,7 +55,7 @@ def power() :
 
 def root() :
     print()
-    a = int(input("Enter the base number : "))
+    a = float(input("Enter the base number : "))
     b = int(input("Enter the root degree : "))
     print()
     if (b==0) :        
@@ -66,8 +66,8 @@ def root() :
 
 def percentage() :
     print()
-    a = int(input("Enter the base number : "))
-    b = int(input("Enter the percentage you want to calculate : "))
+    a = float(input("Enter the base number : "))
+    b = float(input("Enter the percentage you want to calculate : "))
     print()
     unit = a/100
     result = unit * b
@@ -85,7 +85,7 @@ def factorial() :
 
 def abs() :
     print()
-    a = int(input("Enter a number to calculate its absolute value : "))
+    a = float(input("Enter a number to calculate its absolute value : "))
     print()
     if(a>=0) :
         return a
